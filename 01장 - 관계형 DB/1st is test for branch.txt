@@ -1,0 +1,12 @@
+git config --global user.name "name"
+git config --global user.email "email@email"
+git clone <git address>
+git add <file name> or *
+git commit -m "explanation"
+git push origin master
+
+mv [옵션] [원본] [이동경로](파일명 변경 및 이동)
+mv filename ~/dir/
+cp [옵션] [원본] [사본]
+rm [-r] [원본]
+
