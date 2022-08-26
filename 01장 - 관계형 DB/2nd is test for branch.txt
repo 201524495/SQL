@@ -1,0 +1,16 @@
+
+git branch <branch name> - 생성
+git checkout <branch name> - 변경
+== 
+git checkout -b <branch name> - 둘다
+git branch - branch 확인
+git add <file name>
+git commit -m "comment"
+git checkout <master branch>
+git merge <branch name>
+git branch -d <branch name> - 삭제
+
+
+
+대부분 branch는 사용 후 더이상 사용하지 않아 삭제 처리
+나는 test로 만들어 놓고 계속 써야겠다.
