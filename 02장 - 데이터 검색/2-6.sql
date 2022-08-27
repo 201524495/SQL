@@ -1,0 +1,7 @@
+/**
+
+*/
+
+SELECT ENAME, JOB
+FROM EMP
+ORDER BY JOB;

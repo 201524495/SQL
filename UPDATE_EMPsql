@@ -1,0 +1,7 @@
+update emp
+set comm = 0
+where comm <= 2000;
+
+select *
+from emp
+order by deptno;
