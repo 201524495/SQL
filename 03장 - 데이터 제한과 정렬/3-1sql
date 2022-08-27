@@ -1,0 +1,12 @@
+/**
+clear upper_case and lower_case 
+*/
+/*
+select *
+from emp
+where ename = 'messi';
+*/
+
+select *
+from emp
+where ename = 'MESSI';

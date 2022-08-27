@@ -1,0 +1,5 @@
+SELECT ENAME Employee, SAL salary
+FROM EMP
+WHERE SAL > 25000 AND DEPTNO IN (10, 30)
+ORDER BY salary desc
+;
