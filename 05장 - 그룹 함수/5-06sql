@@ -1,0 +1,9 @@
+/**
+
+*/
+
+SELECT COUNT(*) TOTAL, SUM(DECODE(TO_CHAR(HIREDATE, 'YY'), '80', 1, 0)) "1980"
+            ,SUM(DECODE(TO_CHAR(HIREDATE, 'YY'), '81', 1, 0)) "1981"
+            ,SUM(DECODE(TO_CHAR(HIREDATE, 'YY'), '82', 1, 0)) "1982"
+            ,SUM(DECODE(TO_CHAR(HIREDATE, 'YY'), '83', 1, 0)) "1983"
+FROM EMP;

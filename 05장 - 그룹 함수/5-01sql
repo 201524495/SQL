@@ -1,0 +1,7 @@
+/**
+
+*/
+
+SELECT COUNT(*) TOTAL, MAX(SAL) "MAX SAL",
+                MIN(SAL) "MIN SAL", SUM(SAL) "SUM SAL"
+FROM EMP;

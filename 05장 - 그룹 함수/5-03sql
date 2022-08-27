@@ -1,0 +1,7 @@
+/**
+
+*/
+
+SELECT JOB, COUNT(*) TOTAL
+FROM EMP
+GROUP BY JOB;
