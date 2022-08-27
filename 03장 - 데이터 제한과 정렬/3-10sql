@@ -1,0 +1,8 @@
+/**
+
+*/
+
+SELECT *
+FROM EMP
+WHERE JOB IN ('Tester', 'Helper')
+        AND SAL NOT IN (1000, 1600, 5000);

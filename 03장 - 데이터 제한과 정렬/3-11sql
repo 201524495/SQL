@@ -1,0 +1,8 @@
+/**
+
+*/
+
+select *
+from emp
+where (job like '%e%e%')
+    and (deptno = 10 or mgr = 6) ;
