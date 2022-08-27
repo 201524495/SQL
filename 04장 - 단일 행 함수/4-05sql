@@ -1,0 +1,9 @@
+/**
+
+*/
+
+SELECT ENAME || ' earns ' || to_char(sal, '$999,999.99') ||
+        ' monthly but wants ' || 
+        to_char(sal*3, '$999,999.00') as "Dream Salary"
+FROM EMP
+ORDER BY SAL DESC;

@@ -1,0 +1,6 @@
+/**
+
+*/
+
+SELECT ENAME, LPAD(SAL, 15, '*') AS "SAL"
+FROM EMP
