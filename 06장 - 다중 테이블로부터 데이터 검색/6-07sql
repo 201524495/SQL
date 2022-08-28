@@ -1,0 +1,12 @@
+/**
+
+*/
+
+SELECT ENAME || '   ' || 
+        RPAD('*', SAL/100, '*') "EMPLOYEE AND THEIR SALARY"
+FROM EMP
+ORDER BY CASE WHEN JOB = 'MANAGER' THEN 1
+                WHEN JOB = 'TESTER' THEN 2
+                WHEN JOB = 'HELPER' THEN 3
+                ELSE 4
+            END, SAL DESC;
