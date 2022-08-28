@@ -1,0 +1,7 @@
+/**
+
+*/
+
+SELECT *
+FROM EMP
+WHERE (JOB, SAL) = (SELECT JOB, SAL FROM EMP WHERE ENAME = 'Fake');

@@ -1,0 +1,7 @@
+/**
+
+*/
+
+SELECT E.ename, E.job, E.sal, E.DEPTNO
+FROM EMP E
+where E.DEPTNO = (SELECT DEPTNO FROM DEPT WHERE LOC = 'ULSAN');

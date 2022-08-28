@@ -1,0 +1,8 @@
+/**
+
+*/
+
+SELECT EMPNO, ENAME, SAL, deptno
+FROM EMP
+WHERE DEPTNO in (SELECT DEPTNO FROM EMP WHERE ENAME LIKE '%i%')
+order by deptno;
