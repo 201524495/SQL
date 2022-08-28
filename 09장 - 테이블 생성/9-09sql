@@ -1,0 +1,6 @@
+/**
+
+*/
+
+DROP TABLE EMP_DEPT;
+DROP TABLE EMP_GRADE;
