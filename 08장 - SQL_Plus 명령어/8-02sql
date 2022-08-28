@@ -1,0 +1,9 @@
+/**
+
+*/
+
+SELECT E.ENAME || ' , ' || E.JOB AS "NAME _ JOB",
+    TO_CHAR(HIREDATE, 'YYYY') || ' ³â ' || TO_CHAR(HIREDATE, 'MM') || ' ¿ù ' ||
+    TO_CHAR(HIREDATE, 'DD') || ' ÀÏ ' || TO_CHAR(HIREDATE, 'DAY') 
+    AS "DATE"
+FROM EMP E;
