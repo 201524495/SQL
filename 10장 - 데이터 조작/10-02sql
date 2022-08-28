@@ -1,0 +1,11 @@
+/**
+
+*/
+
+INSERT INTO MY_DATA VALUES(1,'Scott','sscott',10000);
+INSERT INTO MY_DATA VALUES(2,'Ford','fford',13000);
+INSERT INTO MY_DATA VALUES(3,'Patel','ppatel',33000);
+INSERT INTO MY_DATA VALUES(4,'Report','rreport',23500);
+INSERT INTO MY_DATA VALUES(5,'Good','ggood',44450);
+
+
