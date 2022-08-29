@@ -1,0 +1,10 @@
+/**
+
+*/
+
+SELECT * FROM MY_DATA;
+
+DELETE MY_DATA
+WHERE NAME = 'Ford';
+
+SELECT * FROM MY_DATA;
