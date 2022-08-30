@@ -1,0 +1,5 @@
+/**
+
+*/
+
+DROP SEQUENCE TEST_SEQ;
