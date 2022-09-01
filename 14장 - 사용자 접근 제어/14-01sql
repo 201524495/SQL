@@ -1,0 +1,5 @@
+/**
+
+GRANT USER test IDENTIFIED BY test;
+
+*/
