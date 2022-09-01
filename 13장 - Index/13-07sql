@@ -1,0 +1,10 @@
+/**
+
+*/
+
+CREATE SYNONYM S_EMP
+FOR EMP;
+
+DESC S_EMP;
+
+SELECT * FROM S_EMP;
