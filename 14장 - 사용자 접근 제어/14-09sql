@@ -1,0 +1,10 @@
+/**
+
+ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
+-- USER NAME 앞에 C## 붙이기 싫을 때
+
+-- SYS 계정에서 만들어야 함.
+CREATE USER LSS
+IDENTIFIED BY TUTLE;
+*/
+
