@@ -1,0 +1,11 @@
+/**
+
+- 권한 뺏기
+REVOKE CONNECT, RESOURCE
+FROM LSS;
+
+- 사용자 삭제
+DROP USER LSS CASCADE;
+
+*/
+
