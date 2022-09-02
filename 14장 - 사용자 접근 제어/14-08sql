@@ -1,0 +1,6 @@
+/**
+현제 SESSION을 이루고 있는 사용자가 가지고 있는 OBJECT 권한을 조회.
+*/
+
+SELECT USERNAME, privilege
+FROM USER_SYS_PRIVS;
