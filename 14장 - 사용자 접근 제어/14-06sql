@@ -1,0 +1,6 @@
+/**
+사용자가 엑세스 가능한 테이블 조회
+*/
+
+SELECT TABLE_NAME, PRIVILEGE
+FROM ROLE_TAB_PRIVS;
