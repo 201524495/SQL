@@ -1,0 +1,14 @@
+/**
+
+DECLARE 
+    V_EMPNO NUMBER(4);
+    V_ENAME VARCHAR2(10);
+    V_JOB VARCHAR2(9);
+    V_SAL NUMBER(7,2);
+    V_COMM NUMBER(7,2);
+    
+BEGIN
+    
+END;
+/
+*/
