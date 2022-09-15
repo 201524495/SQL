@@ -1,0 +1,12 @@
+/**
+DECLARE
+    V_ID NUMBER; (O)
+    
+    V_EMP, V_SAL, V_COMM NUMVER; (X) - 다중 선언 불가
+    
+    V_FLAG BOOLEAN := 1; (X) - TRUE, FALSE만 가능
+    
+    TYPE EMP_TABLE_TYPE IS TABLE OF VARCHAR2(20)
+        INDEX BY BINARY_INTEGER;
+    EMP_TABLE EMP_TABLE_TYPE; (O)
+*/
