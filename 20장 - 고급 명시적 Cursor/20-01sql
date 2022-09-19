@@ -1,0 +1,9 @@
+/**
+
+*/
+
+drop table emp_mess;
+
+create table emp_mess (
+    emp_mess varchar2(100)
+    );
