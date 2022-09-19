@@ -1,0 +1,27 @@
+/**
+
+*/
+
+declare
+    v_sal emp.sal%type := '&p_sal';
+    v_job emp.job%type ;
+    v_ename emp.ename%type ;
+    
+    emp_constraint exception;
+    pragma exception_init(emp_constraint, -2292);
+begin
+    select ename, sal, job
+        into v_ename, v_sal, v_job
+    from emp
+    where sal = v_sal;
+    dbms_output.put_line(' name : ' || v_ename ||
+                            ' sal : ' || v_sal ||
+                            ' job : ' || v_job );
+
+    exception
+        when no_data_found then
+            dbms_output.put_line('no date');
+        when too_many_rows then
+            dbms_output.put_line('too many');
+end;
+/
