@@ -1,0 +1,26 @@
+/**
+
+DROP TABLE TTEST CASCADE CONSTRAINTS;
+
+CREATE TABLE TTEST (
+    ID NUMBER(4)
+);
+*/
+
+DESC TTEST;
+
+DECLARE
+    V_ID NUMBER(4) := &P_ID;
+
+BEGIN
+    IF V_ID IN (1,2,4,5,8,9,10) THEN
+        V_ID := V_ID;
+    ELSE
+        V_ID := NULL;
+    END IF;
+    
+    INSERT INTO TTEST VALUES(V_ID);
+END;
+/
+
+SELECT * FROM TTEST;
