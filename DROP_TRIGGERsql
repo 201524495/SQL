@@ -1,0 +1,5 @@
+/**
+
+*/
+
+DROP TRIGGER EMP_SAL_TOT_CHK;
