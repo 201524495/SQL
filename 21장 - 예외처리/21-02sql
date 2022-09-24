@@ -1,0 +1,31 @@
+/**
+
+*/
+
+accept p_sal prompt ' enter sal : ';
+declare 
+    v_sal emp.sal%type := '&p_sal';
+    cursor emp_cursor is
+        select empno, ename, job, sal
+        from emp;
+    emp_constraint exception;
+    pragma exception_init(emp_constraint, -2292);
+begin
+    dbms_output.put_line('name  job  sal');
+    dbms_output.put_line('==============');
+    
+    for emp_list in emp_cursor loop
+        if emp_list.sal between v_sal-100 and v_sal+100 then
+            dbms_output.put_line(emp_list.ename || '  ' ||
+                                    emp_list.job || '  ' ||
+                                    emp_list.sal );
+        end if;
+    end loop;
+    
+    exception
+        when no_data_found then
+            dbms_output.put_line('no data');
+        when others then
+            dbms_output.put_line('others');
+end;
+/
