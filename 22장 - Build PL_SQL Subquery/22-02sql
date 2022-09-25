@@ -1,0 +1,27 @@
+/**
+
+*/
+
+create or replace NONEDITIONABLE PROCEDURE emp_sal_update(
+	P_EMPNO in EMP.EMPNO%TYPE,
+	P_SAL in EMP.SAL%TYPE
+	)
+IS
+BEGIN
+	UPDATE EMP
+		SET SAL = P_SAL
+		WHERE EMPNO = P_EMPNO;
+	if SQL%NOTFOUND THEN
+		dbms_output.put_line(to_char(P_EMPNO) || ' NO EMPNO ') ;
+	else
+		dbms_output.put_line(to_char(SQL%ROWCOUNT) || ' TIMES CHANGED ');
+	end if;
+
+end emp_sal_update;
+/
+
+SET SERVEROUTPUT ON
+VAR G_EMPNO VARCHAR2(14);
+VAR G_SAL NUMBER;
+EXECUTE EMP_SAL_UPDATE(99, 9999);
+SELECT * FROM EMP ORDER BY EMPNO;
