@@ -1,0 +1,30 @@
+/**
+
+*/
+
+declare 
+    cursor emp_cursor is
+        select ename, deptno
+        from emp;
+    cursor dept_cursor is
+        select * 
+        from ( select dname, deptno
+                from dept
+                order by dname)
+        where rownum <= 5;
+
+begin
+    for dept_list in dept_cursor loop
+        for emp_list in emp_cursor loop
+            if (emp_list.deptno = dept_list.deptno)
+                --and
+                --(emp_list.ename in ('Black', 'Jack', 'Chris'))
+                then
+                dbms_output.put_line(emp_list.ename
+                            || '  ' ||
+                            dept_list.dname);
+            end if;
+        end loop;
+    end loop;
+end;
+/
