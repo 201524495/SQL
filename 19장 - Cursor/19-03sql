@@ -1,0 +1,29 @@
+/**
+enter job
+*/
+
+declare 
+    v_job emp.job%type := '&job';
+    cursor emp_cursor is
+        select ename, job, sal, deptno
+        from emp
+        where job = v_job;
+    cursor dept_cursor is
+        select dname, loc, deptno
+        from dept;
+begin
+    dbms_output.put_line('name    job    dname    loc');
+    dbms_output.put_line('===========================');
+    for emp_list in emp_cursor loop
+        for dept_list in dept_cursor loop
+            if emp_list.deptno = dept_list.deptno then
+                dbms_output.put_line(emp_list.ename || '  ' ||
+                                    emp_list.job || '  ' ||
+                                    emp_list.sal || '  ' ||
+                                    dept_list.dname || '  ' ||
+                                    dept_list.loc);
+            end if;
+        end loop;
+    end loop;
+end;
+/
