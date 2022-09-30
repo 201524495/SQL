@@ -1,0 +1,12 @@
+/**
+create
+*/
+
+drop table emp_deptno_total;
+
+create table emp_deptno_total (
+    deptno number(2),
+    total number(10,2)
+    );
+    
+desc emp_deptno_total;
