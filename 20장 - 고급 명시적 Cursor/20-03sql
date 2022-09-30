@@ -1,0 +1,9 @@
+/**
+
+For update : 행 갱신 or 삭제 전 행을 잠글 수 있다.
+
+Where cursor of : 명시적 cursor에서 현재 참조할 때 where current of 사용.
+    명시적으로 RowID 참조하지 않고 현재 처리중인 행 갱신, 삭제.
+
+*/
+
