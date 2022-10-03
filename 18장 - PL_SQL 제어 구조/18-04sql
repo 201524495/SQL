@@ -1,0 +1,11 @@
+/**
+LOOP
+
+1. FOR LOOP [VALUE] IN (REVERSE) [START] .. [END]
+    STATEMENT ...
+    
+2. WHILE LOOP [CONDITION]
+    STATMENT ...
+
+*/
+
