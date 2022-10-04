@@ -1,0 +1,22 @@
+/**
+deptno sum sal
+*/
+
+declare
+    emp_record emp%rowtype;
+    
+    cursor dept_sum is
+        select d.deptno, sum(e.sal) salary
+        from emp e, dept d
+        where e.deptno = d.deptno
+        group by d.deptno;
+begin
+    for emp_list in dept_sum loop
+        dbms_output.put_line(emp_list.deptno || ' ' ||
+                            to_char(emp_list.salary, '$999,999.99'));
+        insert into emp_deptno_total values(emp_list.deptno, emp_list.salary);
+    end loop;
+end;
+/
+
+select * from emp_deptno_total order by deptno;
