@@ -1,0 +1,14 @@
+/**
+
+EXCEPTION_NAME EXCEPTION;
+ : 이름을 정의 한 후 
+
+RAISE EXCEPTION_NAME;
+ : 실행 섹션에서 명시적으로 예외를 발생하기 위해 RAISE 사용
+ 
+EXCEPTION
+    WHEN EXCEPTION_NAME THNE
+        DBMS_OUTPUT.PUT_LINE(~~);
+ : 해당 예외 처리기 안에 선언된 예외를 참조
+*/
+
